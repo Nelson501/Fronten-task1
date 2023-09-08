@@ -2,7 +2,7 @@ body{
     margin: auto;
     padding: 0;
     box-sizing: 0;
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
-    background-color: rgb(237, 237, 231);
+    background-color: white;
     color: black;
     position: relative;
     width: 150px;
@@ -38,12 +38,12 @@ body{
     margin-top: 18px;
     width: 150px;
     height: 150px;
-    border: 1px solid wheat;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
 [data-testid="slackDisplayImage"], img{
-    border: 1px solid wheat;
+    border: 1px solid white;
     border-radius: 10px;
     overflow: hidden;
     width: 150px;
