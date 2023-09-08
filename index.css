@@ -4,21 +4,22 @@ body{
     box-sizing: 0;
     background-color: whitesmoke;
     display: flex;
-    justify-items: center;
-    width: calc(100vh);
-    height: 100%;
+    justify-content: center;
     align-items: center;
+    width: calc(70vh);
+    height: calc(70vh);
+    padding: 100px;
 }
 
 [data-testid="container"]{
     display: grid;
     justify-items: center;
+    align-items: center;
     background-color: rgb(237, 237, 231);
     color: black;
     position: relative;
-    width: 400px;
-    margin-top: 40px;
-    padding: 40px 0;
+    width: 150px;
+    padding: 40px;
     border-radius: 20px;
 
 }
@@ -34,34 +35,47 @@ body{
     display: flex;
     justify-items: center;
     align-items: center;
-    margin-top: 20px;
-    width: 150px;
-    height: 150px;
-    border: 1px solid;
-    border-radius: 50%;
+    margin-top: 18px;
+    width: 140px;
+    height: 140px;
+    border: 1px solid wheat;
+    border-radius: 10px;
 }
 
 [data-testid="slackDisplayImage"], img{
-    border: 1px solid ;
-    border-radius: 50%;
+    border: 1px solid wheat;
+    border-radius: 10px;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     cursor: pointer;
+}
+
+[data-testid="gitImg"]{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 2px;
+    top: 4px;
+    
 }
 
 [data-testid="currentdayOfTheweek"]{
     font: bold;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
+
 }
 
 [data-testid="currentdayOfTheweek"].currentUtcDate{
+    font: bold;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }    
 
 
 [data-testid="gitubURl"]{
+    display: flex;
     margin-top: 10px;
     background-color: black;
     padding:6px 10px;
@@ -83,9 +97,9 @@ body{
         display: grid;
         justify-items: center;
         position: relative;
-        width: 600px;
-        margin-top: 80px;
-        padding: 40px 0;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
         border-radius: 20px;
     
     }
@@ -104,13 +118,9 @@ body{
         margin-top: 20px;
         width: 150px;
         height: 150px;
-        border: 1px solid;
-        border-radius: 50%;
     }
     
     [data-testid="slackDisplayImage"], img{
-        border: 1px solid ;
-        border-radius: 50%;
         overflow: hidden;
         width: 150px;
         height: 150px;
