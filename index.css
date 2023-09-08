@@ -36,8 +36,8 @@ body{
     justify-items: center;
     align-items: center;
     margin-top: 18px;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border: 1px solid wheat;
     border-radius: 10px;
 }
@@ -46,8 +46,8 @@ body{
     border: 1px solid wheat;
     border-radius: 10px;
     overflow: hidden;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
 }
 
