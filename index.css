@@ -2,7 +2,7 @@ body{
     margin: auto;
     padding: 0;
     box-sizing: 0;
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(249, 238, 227);
     color: black;
     position: relative;
     width: 150px;
@@ -25,7 +25,7 @@ body{
 }
 
 [data-testid="slackUserName"]{
-    margin-top: 5px;
+    margin-bottom: 3px;
     font-size: small;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -35,9 +35,9 @@ body{
     display: flex;
     justify-items: center;
     align-items: center;
-    margin-top: 18px;
-    width: 150px;
-    height: 150px;
+    margin-top: 8px;
+    width: 120px;
+    height: 120px;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -46,24 +46,22 @@ body{
     border: 1px solid white;
     border-radius: 10px;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
 }
 
-[data-testid="gitImg"]{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 2px;
-    top: 4px;
+[data-testid="myTrack"]{
+    margin-top: 2px;
+    font: bold;
+    font-size: larger;
     
 }
 
 [data-testid="currentdayOfTheweek"]{
     font: bold;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 5px;
+    padding-top: 3px;
 
 }
 
@@ -76,13 +74,19 @@ body{
 
 [data-testid="gitubURl"]{
     display: flex;
-    margin-top: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 8px;
     background-color: black;
     padding:6px 10px;
     border-radius: 3px;
 
 }
 [data-testid="gitubURl"], a{
+    align-items: center;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
@@ -91,7 +95,7 @@ body{
     cursor: pointer;
 }
 
-@media screen and (min-width:320px){
+@media screen and (min-width:780px){
     
     [data-testid="container"]{
         display: grid;
@@ -105,7 +109,7 @@ body{
     }
 
     [data-testid="slackUserName"]{
-        margin-top: 5px;
+        margin-bottom: 3px;
         font-family: 'Times New Roman', Times, serif;
         font-size: larger;
         
@@ -115,15 +119,15 @@ body{
         display: flex;
         justify-items: center;
         align-items: center;
-        margin-top: 20px;
-        width: 150px;
-        height: 150px;
+        margin-top: 15px;
+        width: 120px;
+        height: 120px;
     }
     
     [data-testid="slackDisplayImage"], img{
         overflow: hidden;
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         cursor: pointer;
     }
 }
