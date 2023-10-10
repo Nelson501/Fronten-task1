@@ -1,133 +1,235 @@
+/* https://fronten-task1.vercel.app/ */
+
+
 body{
-    margin: auto;
     padding: 0;
+    margin: 0;
     box-sizing: 0;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(70vh);
-    height: calc(70vh);
-    padding: 100px;
-}
-
-[data-testid="container"]{
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    background-color: rgb(249, 238, 227);
-    color: black;
-    position: relative;
-    width: 150px;
-    padding: 40px;
-    border-radius: 20px;
-
-}
-
-[data-testid="slackUserName"]{
-    margin-bottom: 3px;
-    font-size: small;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
-[data-testid="slackDisplayImage"]{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin-top: 8px;
-    width: 120px;
-    height: 120px;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
-[data-testid="slackDisplayImage"], img{
-    border: 1px solid white;
-    border-radius: 10px;
     overflow: hidden;
-    width: 120px;
-    height: 120px;
-    cursor: pointer;
-}
-
-[data-testid="myTrack"]{
-    margin-top: 2px;
-    font: bold;
-    font-size: larger;
     
 }
 
-[data-testid="currentdayOfTheweek"]{
-    font: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 3px;
-
-}
-
-[data-testid="currentdayOfTheweek"].currentUtcDate{
-    font: bold;
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-}    
-
-
-[data-testid="gitubURl"]{
-    display: flex;
+.main-container{
+    display: grid;
     justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin-top: 8px;
-    background-color: black;
-    padding:6px 10px;
-    border-radius: 3px;
+    align-content: center;
+    width:100%;
+    height: calc(100vh);
+    background-color:wheat;
 
 }
-[data-testid="gitubURl"], a{
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: larger;
-    cursor: pointer;
-}
 
-@media screen and (min-width:780px){
+@media screen  and (max-width: 320px){
     
-    [data-testid="container"]{
+    .inner-container{
         display: grid;
-        justify-items: center;
+        align-items: center;        
         position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 40px;
-        border-radius: 20px;
-    
-    }
-
-    [data-testid="slackUserName"]{
-        margin-bottom: 3px;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: larger;
-        
-    }
-
-    [data-testid="slackDisplayImage"]{
-        display: flex;
         justify-items: center;
-        align-items: center;
-        margin-top: 15px;
-        width: 120px;
-        height: 120px;
+        padding: 10px;
     }
-    
-    [data-testid="slackDisplayImage"], img{
-        overflow: hidden;
-        width: 130px;
-        height: 130px;
+
+    .myName{
+        display: block;
+        position: relative;
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .dayInaWeek{
+        color: black;
+        margin-top: -3px 0;
+        padding: 0;
+
+    }
+
+    .timeInUtc{
+        margin-top: -8px;
+        color: black;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .myStack{
+        font-weight: bolder;
+        margin-top: 8px;
+    }
+
+    .myGit{
+        margin-top: 15px;
+        background-color:black ;
+        color: wheat;
+        padding: 8px;
+        border-radius: 10px;
         cursor: pointer;
     }
+
+
+}
+
+@media screen and (max-width:760px){
+     
+    .inner-container{
+        display: grid;
+        align-items: center;        
+        position: relative;
+        justify-items: center;
+        padding: 6px;
+    }
+
+    .myName{
+        display: block;
+        position: relative;
+        font-size: larger;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .dayInaWeek{
+        margin-top: 10px;
+        padding: auto;
+        font-size: larger;
+        color: grey;
+    }
+
+    .timeInUtc{
+        margin-top: 2px 0;
+        color: black;
+        font-size: large;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .myStack{
+        font-size:larger;
+        font-weight: bolder;
+        margin-top: 10%;
+    }
+
+    .myGit{
+        margin-top: 15px;
+        background-color:black ;
+        color: wheat;
+        font-size: large;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+}
+
+/* @media screen and (max-width:1440px){
+
+    .inner-container{
+        display: grid;
+        justify-content: center;
+        align-items: center;        
+        position: relative;
+        justify-items: center;
+        padding: 2px;
+    }
+    
+    .dayInaWeek{
+        margin-top: 5px 0;
+        padding: auto;
+        font-size: x-large;
+        color: gray;
+    }
+
+    .timeInUtc{
+        margin-top: 2px 0;
+        display: block;
+        justify-content: center;
+        color: gray;
+        font-size: large;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .myStack{
+        font-size:x-large;
+        font-weight: bolder;
+        margin-top: 10%;
+    }
+    
+    .myGit{
+        margin-top: 15px;
+        background-color:black ;
+        color: wheat;
+        font-size: x-large;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+} */
+
+.inner-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;        
+    position: relative;
+    justify-items: center;
+    padding: 2px;
+}
+
+.dayInaWeek{
+    margin-top: 5px 0;
+    padding: auto;
+    font-size: x-large;
+    color: grey;
+}
+
+.timeInUtc{
+    margin-top: 2px 0;
+    display: block;
+    justify-content: center;
+    color: black;
+    font-size: large;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.myStack{
+    font-size:x-large;
+    font-weight: bolder;
+    margin-top: 10%;
+}
+
+.myGit{
+    margin-top: 15px;
+    background-color:black ;
+    color: wheat;
+    font-size: x-large;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.myImg{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
 }

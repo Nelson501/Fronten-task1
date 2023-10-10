@@ -1,18 +1,23 @@
 
-const dayOfWeek = document.querySelector('[data-testid = "currentdayOfTheweek"]')
-const currentDateUtc = document.querySelector('[data-testid = "currentUtcDate"]')
+const dayOfWeek = document.querySelector('.dayInaWeek')
+const currentDateUtc = document.querySelector('.timeInUtc')
 
 function updateWeek(){
+
+    // dayOfWeek .textContent= new Date().getUTCDay();
+    // console.log(currentDateUtc);
+
      dayOfWeek.textContent = new Date().toLocaleDateString('en-US', {weekday:"long"});
      
-    //  console.log(dayOfWeek);
+     console.log(dayOfWeek);
 }
 
 function updateTimeUtc(){
-    currentDateUtc .textContent = new Date().toUTCString();
+    currentDateUtc .textContent= new Date().toUTCString();
+    // console.log(currentDateUtc); 
       
 }
 
-setInterval(updateWeek, 1000);
+setInterval(updateTimeUtc, 1000);
 //update every second
-updateTimeUtc();
+updateWeek();
